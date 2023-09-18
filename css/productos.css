@@ -50,3 +50,85 @@ nav a {
     font-size: 16px; /* Tamaño de fuente normal */
      /* Transición suave para cambios de transformación */
 }
+
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83); /* Cambia el color a rojo */
+    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198); /* Cambia el color a azul cuando se hace clic */
+   
+  }
+
+
+/* Estilos Main */
+
+main h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #671E1E;
+    color: #fff; /* Color de la letra*/
+    padding: 20px 0;
+    text-align: center;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ESTILOS PARA LAS SECCIONES DEL FOOTER */
+/*Titulos del footer */
+.contact,
+.subscribe,
+.social {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact h3,
+.subscribe h3,
+.social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact ul,
+.subscribe form,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li,
+.subscribe form input,
+.subscribe form button {
+    margin-bottom: 10px;
+}
