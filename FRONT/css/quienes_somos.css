@@ -297,3 +297,329 @@ button:hover{
     justify-content: center;
 
 }
+
+@media (min-width: 800px){
+
+    #somos .conteiner{
+    
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 100px;
+
+    }
+
+    #somos .paquete{
+    
+        width: 50%;
+        max-width: 600px;
+        text-align: initial      center;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos .img-conteiner{
+
+        background-image: url("../img/img_quienes_somos/gente-min.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+
+    }
+
+    #galeria .conteiner{
+    
+        display: flex;
+     justify-content: center;
+        padding-right: 100px;  
+
+    }
+
+    #galeria .img-conteiner{
+
+        background-image: url("../img/img_quienes_somos/galery.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+
+    }
+
+    #galeria .paquete{
+
+        width: 50%;
+        max-width: 600px;
+        text-align: initial center;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: right right;
+
+    }
+
+    #envios .conteiner{
+
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 100px;
+
+    }
+
+    #envios .paquete{
+
+        width: 50%;
+        max-width: 600px;
+        text-align: initial center;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #envios .img-conteiner{
+
+        background-image: url("../img/img_quienes_somos/logistica.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+
+    }
+
+    #redes_soc .conteiner{
+
+        display: flex;
+        justify-content: left;
+        padding-right: 90px;
+
+    }
+
+    #redes_soc .img-conteiner{
+
+        background-image: url("../img/img_quienes_somos/red-social-removebg-preview.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width:400px;
+    }
+           
+}
+
+
+#programadores{
+
+    background-color: rgb(60, 30, 30);
+    color: white;
+    text-align: center;
+    align-self:center;
+    
+    
+}
+#programadores .titulo_team{
+    padding-bottom: 20px;
+    text-align: center center;
+}
+
+#programadores .conteiner{
+    padding: 80px;
+}
+
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(7, 4fr) ;
+ 
+    justify-content: center;
+
+    gap: 0.2cm; /* Espacio entre las personas */
+    align-self: center ;
+    /* Media query para pantallas más pequeñas */
+    }
+
+@media screen and (max-width: 954px) {
+       .grid-container {
+            grid-template-columns: repeat(5, 1fr);
+        
+        
+        }
+   
+  
+}
+
+@media screen and (max-width: 800px) {
+       .grid-container {
+           grid-template-columns: repeat(3, 1fr); /* Dos columnas en pantallas medianas */
+       }
+   }
+
+ @media screen and (max-width: 450px) {
+      .grid-container {
+            display: flex;
+            flex-wrap: wrap; /* Cambiar a un diseño de una sola columna */
+            justify-content: center;
+        }
+ 
+
+    }
+/* Estilo para cada persona */
+.persona {
+
+flex-direction: column;
+justify-content:space-between;
+align-self:center;
+height: 100%;
+padding: 5px;
+border: 1px solid #671E1E;
+background-color: rgb(30,30,30);
+}
+
+.persona img {
+ align-self:center;
+ align-items: center;
+ width:50%;
+ border-radius:50%;
+
+ 
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #671E1E;
+    color: #fff; /* Color de la letra*/
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* ESTILOS PARA LAS SECCIONES DEL FOOTER */
+/*Titulos del footer */
+footer {
+    background-color: #671E1E;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.contact,
+.subscribe,
+.social {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact h3,
+.subscribe h3,
+.social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact ul,
+.subscribe form,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li,
+.subscribe form input,
+.subscribe form button {
+    margin-bottom: 10px;
+}
+
+.subscribe input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #952323;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px; 
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 10px; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;
+    background-color: #fff; 
+    color: #000; 
+    justify-content: center;
+}
+
+.facebook:hover {
+    background-color: #1877f2; 
+    color: #fff; 
+}
+
+.twitter:hover {
+    background-color: #1da1f2; 
+    color: #fff; 
+}
+
+.instagram:hover {
+    background-color: #1da1f2; 
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .subscribe {
+        margin: 10px;
+    }
+
+    }
