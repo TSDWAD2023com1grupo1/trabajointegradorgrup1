@@ -1,5 +1,4 @@
 
-
 class Usuarios:
     def _init_(self, password, registrofecha, email, direccion):
         self.password = password
@@ -34,8 +33,8 @@ class Usuarios:
             print("El usuario ya existe")
             
     def ingresar_contraseña(self, contraseña):
-        if password = password.len
-            for password in self.password
+        if password == password.len():
+            for password in self.password:
                 if password.isupper():
                     return True
             return False
