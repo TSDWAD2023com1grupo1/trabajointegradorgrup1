@@ -3,7 +3,7 @@ const btnSignIn = document.getElementById("sign-in"),
       formRegister = document.querySelector(".register"),
       formLogin = document.querySelector(".login");
      
-if (window.location.href.includes("../drescode_indexes/login.html")){
+if (window.location.href.includes("login.html")){
     btnSignIn.addEventListener("click", () =>{
     
         formRegister.classList.add("hide"),
@@ -20,11 +20,10 @@ if (window.location.href.includes("../drescode_indexes/login.html")){
     
     registrar(); 
     }
-    );
+    )
 };
 
 if(window.location.href.includes("login.html")){
-
 
     function registrar(){
         
@@ -103,19 +102,20 @@ function mostrarModal() {
             setTimeout(function() {
                 formContent.classList.remove("hide");
             }, 1000);
-        };
     };
+};
     
-    setTimeout(mostrarModal, 2000);
-    
-    document.getElementById("user-log").addEventListener("click", function(e) {
+setTimeout(mostrarModal, 2000);
+
+document.getElementById("user-log").addEventListener("click", function(e) {
         e.preventDefault(); 
         
         loguear(); 
-    });
+    }   
+);
     
     
-    function loguear() {
+function loguear() {
         let user = document.getElementById("email-login").value;
         let pass = document.getElementById("contraseña").value;  
     
