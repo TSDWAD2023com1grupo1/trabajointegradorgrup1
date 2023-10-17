@@ -3,7 +3,7 @@ const btnSignIn = document.getElementById("sign-in"),
       formRegister = document.querySelector(".register"),
       formLogin = document.querySelector(".login");
      
-if (window.location.href.includes("login.html")){
+if (window.location.href.includes("../drescode_indexes/login.html")){
     btnSignIn.addEventListener("click", () =>{
     
         formRegister.classList.add("hide"),
