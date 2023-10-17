@@ -6,7 +6,7 @@
 }
 
 body {background-size: cover;
-    background-image: url(./img/img_login/ropa-fondo-2.jpg);
+    background-image: url(../img/img_login/ropa-fondo-2.jpg);
     backdrop-filter: blur(3px);
 }
 
