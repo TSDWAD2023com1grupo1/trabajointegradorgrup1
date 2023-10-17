@@ -73,3 +73,91 @@ if(window.location.href.includes("login.html")){
             warnings += "Las contraseñas no coinciden.\n";
             entrar = true;
         };
+        if(entrar) {
+            swal(
+                tittle = "Error",
+                text = warnings,
+                icon = "warning",
+            );
+        }else{
+            swal(title= "¡Felicitaciones!",
+                 text = "¡Se ha registrado correctamente!",
+                 icon = "success"
+            );
+            
+        };
+    };
+};
+    
+const modal = document.getElementById('myModal');
+const openModalBtn = document.getElementById('openModalBtn');
+const formContent = document.querySelector(".container-form");
+    
+let modalMostrado = false;  
+    
+    
+function mostrarModal() {
+    if (!modalMostrado) {
+            modal.style.display = 'block';
+            modalMostrado = true;  
+            setTimeout(function() {
+                formContent.classList.remove("hide");
+            }, 1000);
+        };
+    };
+    
+    setTimeout(mostrarModal, 2000);
+    
+    document.getElementById("user-log").addEventListener("click", function(e) {
+        e.preventDefault(); 
+        
+        loguear(); 
+    });
+    
+    
+    function loguear() {
+        let user = document.getElementById("email-login").value;
+        let pass = document.getElementById("contraseña").value;  
+    
+    
+        if (user === "Juan@gmail.com" && pass === "1234!Milan") {  
+            
+            if (window.location.href.includes("login.html")) {
+                swal(
+                    title="Bienvenido",
+                    text="Inicio de sesión exitoso. Redirigiendo a la página...",
+                    icon="success",
+                );
+                setTimeout(function() {
+                    window.location.href = "index.html";
+                }, 4000);
+            };
+            if (window.location.href.includes("index.html")) {
+                swal(
+                    title="Bienvenido",
+                    text="¡Inicio de sesión exitoso!",
+                    icon="success",
+                );
+                modal.style.display = 'none'; 
+                setTimeout(function() {
+                    }, 4000);
+                
+            }
+    
+        } else {
+            if(user != "Juan@gmail.com" || pass != "1234!Milan"){
+                swal({
+                title:"¡Datos Incorrectos!",
+                icon:"error",
+            });}
+            if(user == "" && pass == ""){
+                {swal({
+                        title:"¡No se registraron datos!",
+                        icon:"warning",
+                    });
+        
+                };
+            };
+          };
+    
+};
