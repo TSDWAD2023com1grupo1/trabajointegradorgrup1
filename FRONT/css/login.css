@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {background-size: cover;
+    background-image: url(./img/img_login/ropa-fondo-2.jpg);
+    backdrop-filter: blur(3px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(148, 35, 35, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: fixed; /* Hace que el encabezado sea fijo en la parte superior */
+    width: 100%; /* Ancho completo para ocupar toda la pantalla */
+    top: 0px; /* Se adhiere al borde superior de la ventana */
+  }
+
+#registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+
+
+nav img{
+    width: 80%;
+}
+  
+.logo img  {
+    max-width: 100%;
+    height: auto;
+    width: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    margin-right: 40px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px; /* Tamaño de fuente normal */
+     /* Transición suave para cambios de transformación */
+}
+
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83); /* Cambia el color a rojo */
+    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198); /* Cambia el color a azul cuando se hace clic */
+
+}
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83);    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198);
+}
+
+
+/*comienza lo del login y registro*/
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow:  0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease; /*para que el formulario aparezca desde arriba con una transicion */
+    margin: 10px;
+    border: solid thin ;
+    
+}
