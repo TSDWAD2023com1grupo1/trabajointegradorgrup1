@@ -10,7 +10,6 @@ if __name__ == '__main__':
         print('Conexión Fallida')
         print(error)
 
-# ver el tema de admi
     mi_admi = Administrador(1, "admiss", "perrito", "2023-10-11", "admi", "mendoza")
 
 def menu():
