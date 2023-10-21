@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="Stylesheet" href="../css/login.css">
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+
+            <img src="../img/logo.jpeg" alt="logo">
+        </div>   
+        <nav>
+            <ul class="login-ingreso">
+                <li><a href="./Login.html"><img src="../img/img_login/login-icon.png" alt=""></a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./quienes_somos.html">Sobre Nosotros</a></li>
+                <!-- <li><a href="#">Contacto</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <section id="registro"> 
+        <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>¿Ya estás registrado? ¡Inicia sesión haciendo click aqui!</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in" >
+            </div>
+        </div>
+   
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crea Una Cuenta</h2>
+                <div class="icons">   
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-facebook' ></i>
+                </div>
+                <p>O usa tu email para registrarte</p>
+                <form>
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Nombre Completo" id="name">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" id="email">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="password" placeholder="Contraseña" id="clave">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="password" placeholder="Repite la Contraseña" id="clave-repite">
+                    </label>
+                 
+                    <input type="submit" value="registrarse" id="user-registrar">
+                </form>
+            </div>
+        </div>
+    </div> 
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡Bienvenido!</h2>
+                <p>  Si no tienes usuario, registrate y únete a la comunidad Dresscode!</p>
+                <input type="button" value="registrarse" id="sign-up" >
+            </div>
+        </div>
+
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">   
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-facebook' ></i>
+                </div>
+                <p>O Inicia Sesión con una cuenta</p>
+                <form>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" id="email-login">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña" id="contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesión" id="user-log">
+                </form>
+            </div>
+        </div>
+    </div> 
+    </section>
+    <section>   
+    <footer>
+        <div class="container"> 
+            <div class="contact">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 54933333333333</li>
+                    <li><strong><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></strong> 0351 5555555555</li>
+                    <li><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> infowolfsoul@gmail.com</li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h4>NEWSLETTER</h4>
+                <p>¡Recibí todas las ofertas!</p>
+                <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
+                <form>
+                    <input type="email" placeholder="Tu Correo">
+                    <button type="submit">Suscribirse</button>
+                </form>
+        
+            </div>
+
+            <div class="social">
+                <h3>Seguinos en nuestras redes</h3>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/" class="social-link facebook" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=es" class="social-link twitter" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="social-link instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../javascript/login.js"></script>    
+</body>
+</html>        
+    

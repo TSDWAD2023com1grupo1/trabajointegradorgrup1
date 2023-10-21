@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#background {
+    background-color: #3E4462;
+}
+.color _{
+    width: 100%;
+    height: 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(149, 35, 35, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: fixed; /* Hace que el encabezado sea fijo en la parte superior */
+    width: 100%; /* Ancho completo para ocupar toda la pantalla */
+    top: 0px; /* Se adhiere al borde superior de la ventana */
+    z-index: 1;
+}
+
+.logo img  {
+    max-width: 100%;
+    height: auto;
+    width: 2.5rem;
+}
+
+
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+  
+nav li {
+    margin-right: 40px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px; /* Tamaño de fuente normal */
+     /* Transición suave para cambios de transformación */
+}
+
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83); /* Cambia el color a rojo */
+    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198); /* Cambia el color a azul cuando se hace clic */
+   
+  }
+
+
+/* Estilos Main */
+
+main h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #671E1E;
+    color: #fff; /* Color de la letra*/
+    padding: 20px 0;
+    text-align: center;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ESTILOS PARA LAS SECCIONES DEL FOOTER */
+/*Titulos del footer */
+.contact,
+.subscribe,
+.social {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact h3,
+.subscribe h3,
+.social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact ul,
+.subscribe form,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li,
+.subscribe form input,
+.subscribe form button {
+    margin-bottom: 10px;
+}
+
+.subscribe input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #952323;
+}
+
+/* ESTILOS PARA LOS BOTONES DE REDES */
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px; /* Ajusta el espacio horizontal entre elementos */
+    transition: background-color 0.3s, color 0.3s; /* Transición para el color de fondo y el color del texto */
+    padding: 10px; /* Espaciado interno para hacer que el área de clic sea más grande */
+    border-radius: 50%; /* Hace que los botones sean redondos */
+    width: 50px; /* Define el ancho y alto de los botones redondos */
+    height: 50px;
+    background-color: #fff; /* Fondo blanco por defecto */
+    color: #000; /* Color de texto negro por defecto */
+    justify-content: center;
+}
+
+/* Estilos de color para íconos de redes sociales */
+.facebook:hover {
+    background-color: #1877f2; /* Cambia el fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+.twitter:hover {
+    background-color: #1da1f2; /* Cambia el fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+.instagram:hover {
+    background-color: #e4405f; /* Cambia el fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Media Query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .containers {
+        flex-direction: column; /* Cambia el diseño a una columna única en dispositivos móviles */
+    }
+
+    .contact,
+    .subscribe,
+    .social {
+        width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+    }
+}
+
+.imagen-producto {
+    width: 100%;
+    max-height: 200px; /* Establece la altura máxima deseada */
+    object-fit: contain; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+}

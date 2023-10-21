@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {background-size: cover;
+    background-image: url(../img/img_login/ropa-fondo-2.jpg);
+    backdrop-filter: blur(3px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(148, 35, 35, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: fixed; /* Hace que el encabezado sea fijo en la parte superior */
+    width: 100%; /* Ancho completo para ocupar toda la pantalla */
+    top: 0px; /* Se adhiere al borde superior de la ventana */
+  }
+
+#registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+
+
+nav img{
+    width: 80%;
+}
+  
+.logo img  {
+    max-width: 100%;
+    height: auto;
+    width: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    margin-right: 40px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px; /* Tamaño de fuente normal */
+     /* Transición suave para cambios de transformación */
+}
+
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83); /* Cambia el color a rojo */
+    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198); /* Cambia el color a azul cuando se hace clic */
+
+}
+@media (max-width: 300px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    nav li {
+        margin-right: 10px;
+        
+    }
+    nav a {
+        font-size: 10px;
+
+    }
+    
+}
+
+nav a:hover{
+    color: rgb(207, 83, 83);    
+     
+}
+nav a:active {
+    color: rgb(94, 128, 198);
+}
+
+
+/*comienza lo del login y registro*/
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow:  0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease; /*para que el formulario aparezca desde arriba con una transicion */
+    margin: 10px;
+    border: solid thin ;
+}    
+
+.information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #b6bfe9; /* Color de fondo del cuadrado */
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+
+}
+
+.info-childs{
+    width: 100%;
+   
+
+}
+
+.info-childs h2{
+    font-size: 2.5rem;
+}
+
+.info-childs p{
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color .3s ease; /*efecto cuando pasas el mouse sobre el input*/
+}
+
+.info-childs input:hover{
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:  60%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.form-information-childs {
+    padding: 0 30px;
+}  
+
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p{
+    color:#555;
+}
+
+.icons{
+    margin: 15px 0;
+}
+
+.icons i{
+   border-radius: 50%;
+    padding: 15px;
+    cursor:pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: solid thin #9191bd;
+}    
+
+.icons i:hover{
+    background-color: #c7c7f3;
+    color:#fff
+}
+
+
+.form-information  label {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+}
+
+.form-information label input {
+    width:100%;
+    padding: 10px;
+    background-color: #fff;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form-information label i{
+    color: #a7a7a7;
+}
+
+.form-information input[type="submit"] {
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+}
+
+.form-information input[type="submit"]:hover {
+    background-color: #7a7a9a;
+
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+/*responsive*/
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+}
+    
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+    .information{
+        width: 100%;
+        padding:20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .form-information{
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+footer {
+    background-color: #671E1E;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.contact,
+.subscribe,
+.social {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact h3,
+.subscribe h3,
+.social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact ul,
+.subscribe form,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li,
+.subscribe form input,
+.subscribe form button {
+    margin-bottom: 10px;
+}
+
+.subscribe input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #952323;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 20px; 
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 10px; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;
+    background-color: #fff; 
+    color: #000; 
+    justify-content: center;
+}
+
+.facebook:hover {
+    background-color: #1877f2; 
+    color: #fff; 
+}
+
+.twitter:hover {
+    background-color: #1da1f2; 
+    color: #fff; 
+}
+
+.instagram:hover {
+    background-color: #1da1f2; 
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .subscribe {
+        margin: 10px;
+    }
+}
