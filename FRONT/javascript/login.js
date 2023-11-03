@@ -132,7 +132,7 @@ function loguear() {
                     window.location.href = "../../index.html";
                 }, 4000);
             }
-            if (window.location.href.includes("https://tsdwad2023com1grupo1.github.io/trabajointegradorgrup1/")) {
+            if (window.location.href.includes("trabajointegradorgrup1.html")) {
                 swal(
                     title="Bienvenido",
                     text="¡Inicio de sesión exitoso!",
