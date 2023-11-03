@@ -138,11 +138,11 @@ function loguear() {
                     text="¡Inicio de sesión exitoso!",
                     icon="success",
                 );
-                modal.style.display = "none"; 
+                modal.style.display = 'none'; 
                 setTimeout(function() {
-                }, 4000);
-            };
-    
+                    }, 4000);
+                
+            }
         } else {
             if(user != "Juan@gmail.com" || pass != "1234!Milan"){
                 swal({
