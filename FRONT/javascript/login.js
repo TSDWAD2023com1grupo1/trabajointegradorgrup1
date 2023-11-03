@@ -142,7 +142,7 @@ function loguear() {
                 setTimeout(function() {
                 }, 4000);
                 
-            }
+            };
     
         } else {
             if(user != "Juan@gmail.com" || pass != "1234!Milan"){
