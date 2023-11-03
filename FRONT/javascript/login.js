@@ -138,7 +138,7 @@ function loguear() {
                     text="¡Inicio de sesión exitoso!",
                     icon="success",
                 );
-                style.display = 'none'; 
+                modal.style.display = 'none'; 
                 setTimeout(function() {
                     }, 4000);
                 
