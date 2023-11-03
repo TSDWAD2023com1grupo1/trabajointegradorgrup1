@@ -132,13 +132,12 @@ function loguear() {
                     window.location.href = "../../index.html";
                 }, 4000);
             };
-            if (window.location.href.includes("index.html")) {
+            if (window.location.href.includes("../../index.html")) {
                 swal(
                     title="Bienvenido",
                     text="¡Inicio de sesión exitoso!",
                     icon="success",
                 );
-                formContent.classList.add("hide");
                 modal.style.display = 'none'; 
                 setTimeout(function() {
                     }, 2000);
