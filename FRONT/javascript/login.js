@@ -138,9 +138,10 @@ function loguear() {
                     text="¡Inicio de sesión exitoso!",
                     icon="success",
                 );
+                formContent.classList.add("hide");
                 modal.style.display = 'none'; 
                 setTimeout(function() {
-                    }, 4000);
+                    }, 2000);
                 
             }
     
